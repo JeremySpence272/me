@@ -1,25 +1,40 @@
+import { useState } from "react";
+import Body from "./Body";
+import ButtonNav from "./ButtonNav";
+import Header from "./Header";
+
+export enum PageType {
+  home = "home",
+  education = "education",
+  experience = "experience",
+  projects = "projects",
+}
+
+export interface PageProps {
+  currentPage: PageType;
+  handlePageChange: (newPage: PageType) => void;
+}
+
 const App: React.FC = () => {
+  const [currentPage, setCurrentPage] = useState<PageType>(PageType.experience);
+
+  const handlePageChange = (newPage: PageType) => {
+    if (currentPage === newPage) {
+      setCurrentPage(PageType.home);
+      return;
+    }
+    setCurrentPage(newPage);
+  };
+
   return (
-    <div className="text-slate-700">
-      <h1 className="text-xl mt-16 ml-12 font-bold">coming soon... </h1>
-      <p className="ml-12 italic"> in the meantime:</p>
-      <p className="ml-12 mt-4">
-        <a
-          className="text-slate-500 underline"
-          href="https://www.linkedin.com/in/jspence272/"
-        >
-          linkedin
-        </a>
-      </p>
-      <p className="ml-12">
-        <a
-          className="text-slate-500 underline"
-          href="mailto@j.spence@columbia.edu"
-        >
-          j.spence@columbia.edu
-        </a>
-      </p>
-    </div>
+    <>
+      <Header />
+      <ButtonNav
+        currentPage={currentPage}
+        handlePageChange={handlePageChange}
+      />
+      <Body currentPage={currentPage} handlePageChange={handlePageChange} />
+    </>
   );
 };
 
