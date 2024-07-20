@@ -15,13 +15,13 @@ const BodyInner: React.FC<BodyInnerProps> = ({ currentPage }) => {
           </div>
 
           <p>
-            Starting in the fall I will be a part of a scholars program at
-            Columbia University.
+            Starting in the fall I will be a part of a justice scholars program
+            at Columbia University.
           </p>
           <ul className="list-disc list-outside mt-2 ml-4">
             <li>
-              I will be furthering my education through part-time computer
-              science classes at night at the undergraduate school.
+              Will be furthering my education through part-time computer science
+              classes at night at the undergraduate school.
             </li>
           </ul>
           <div className="flex mt-4 justify-between">
@@ -209,16 +209,18 @@ const BodyInner: React.FC<BodyInnerProps> = ({ currentPage }) => {
       return (
         <>
           <p className="mb-4">
-            My name is Jeremy, I've had a diverse entrepreneurial career where
-            I've enjoyed starting multiple companies from scratch that have seen
-            both significant success and failure.
+            I'm currently working on building great software products. As a
+            seasoned entrepreneur I've had experience in finance, emerging
+            markets, and user-facing software products. Throughout my diverse
+            career I've had the luxury to learn a lot from both my successes and
+            my failures.
           </p>
 
-          <p className="mb-4">Some highlights:</p>
+          <p className="mb-2">Some highlights:</p>
           <ul className="mb-4 ml-8 list-disc list-outside">
             <li>
-              Built, grew, and sold a crypto charting platform that became the
-              default charting app for small market cap currencies.
+              Built, grew, and sold a crypto charting platform for small
+              marketcap cryptocurrencies that grew to over 50,000 users.
             </li>
             <li>
               Started a cryptocurrency hedge fund that saw rapid growth to over

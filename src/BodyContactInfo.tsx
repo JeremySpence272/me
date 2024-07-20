@@ -1,16 +1,12 @@
 import React from "react";
-import { PageType } from "./App";
 
-interface ContactProps {
-  handlePageChange: (newPage: PageType) => void;
-}
-const BodyContactInfo: React.FC<ContactProps> = ({ handlePageChange }) => {
+const BodyContactInfo: React.FC = () => {
   return (
     <>
       <p className="mb-4">
-        I'm currently seeking software, product, & growth roles at an early
-        stage startup where I can apply my diverse experiences and help drive
-        bottom line growth.
+        I'm currently seeking software, product, & growth roles at a startup
+        where I can apply my diverse experiences and help drive bottom line
+        growth.
       </p>
       <p>
         Feel free to reach out through{" "}
