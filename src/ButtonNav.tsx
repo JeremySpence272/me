@@ -53,7 +53,7 @@ const ButtonNav: React.FC<PageProps> = ({ currentPage, handlePageChange }) => {
               alt={logo.page.toString()}
               className={`rounded-full mb-4 box-content ${
                 logo.page === PageType.home
-                  ? "w-36 h-36 mb-8 ml-0"
+                  ? "w-36 h-36 mb-4 ml-0"
                   : "w-20 h-20"
               } ${
                 logo.page === currentPage && logo.page !== PageType.home

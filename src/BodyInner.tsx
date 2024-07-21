@@ -165,9 +165,9 @@ const BodyInner: React.FC<BodyInnerProps> = ({ currentPage }) => {
             any cryptocurrency coin listed on coinmarketcap.com.
             <ul className="list-disc list-outside mt-2 ml-4">
               <li>
-                Grew the application to become the default charting platform for
-                smaller marketcap crypotocurrencies with over 50,000 users at
-                it's peak.
+                Grew the application to become one of the default charting
+                platform for smaller marketcap crypotocurrencies with over
+                35,000 weekly sessions.
               </li>
               <li>
                 Sold the user base and API to a competing charting platform
@@ -220,7 +220,8 @@ const BodyInner: React.FC<BodyInnerProps> = ({ currentPage }) => {
           <ul className="mb-4 ml-8 list-disc list-outside">
             <li>
               Built, grew, and sold a crypto charting platform for small
-              marketcap cryptocurrencies that grew to over 50,000 users.
+              marketcap cryptocurrencies that grew to over 35,000 weekly
+              sessions.
             </li>
             <li>
               Started a cryptocurrency hedge fund that saw rapid growth to over
