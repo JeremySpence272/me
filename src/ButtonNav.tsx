@@ -8,19 +8,19 @@ type NavLogo = {
 const ButtonNav: React.FC<PageProps> = ({ currentPage, handlePageChange }) => {
   const logos: NavLogo[] = [
     {
-      path: "src/logos/me.jpg",
+      path: "/logos/me.jpg",
       page: PageType.home,
     },
     {
-      path: "src/logos/columbia.png",
+      path: "/logos/columbia.png",
       page: PageType.education,
     },
     {
-      path: "src/logos/cs.png",
+      path: "/logos/cs.png",
       page: PageType.experience,
     },
     {
-      path: "src/logos/playbook.png",
+      path: "/logos/playbook.png",
       page: PageType.projects,
     },
   ];
