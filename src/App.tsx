@@ -16,7 +16,7 @@ export interface PageProps {
 }
 
 const App: React.FC = () => {
-  const [currentPage, setCurrentPage] = useState<PageType>(PageType.experience);
+  const [currentPage, setCurrentPage] = useState<PageType>(PageType.home);
 
   const handlePageChange = (newPage: PageType) => {
     if (currentPage === newPage) {
