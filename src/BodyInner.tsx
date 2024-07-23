@@ -209,11 +209,10 @@ const BodyInner: React.FC<BodyInnerProps> = ({ currentPage }) => {
       return (
         <>
           <p className="mb-4">
-            I'm currently working on building great software products. As a
-            seasoned entrepreneur I've had experience in finance, emerging
-            markets, and user-facing software products. Throughout my diverse
-            career I've had the luxury to learn a lot from both my successes and
-            my failures.
+            I'm currently working on building great software. I'm a seasoned
+            entrepreneur with experience in finance, emerging markets, and
+            user-facing applications. Throughout my diverse career I've had the
+            luxury to learn a lot from both my successes and my failures.
           </p>
 
           <p className="mb-2">Some highlights:</p>

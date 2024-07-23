@@ -6,7 +6,7 @@ const Header: React.FC = () => {
           Jeremy Spence
         </h1>
         <p className="font-sourceSans text-lg text-slate-700">
-          Learning New Things. Current Fellow @ Columbia University
+          Software Engineer. Columbia University Fellow. Learning New Things
         </p>
       </div>
     </section>
