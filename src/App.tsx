@@ -1,13 +1,16 @@
 import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Body from "./Body";
 import ButtonNav from "./ButtonNav";
 import Header from "./Header";
+import MicrosoftComponent from "./MicrosoftComponent";
 
 export enum PageType {
   home = "home",
   education = "education",
   experience = "experience",
   projects = "projects",
+  msft = "msft", // Add the new page type
 }
 
 export interface PageProps {
@@ -27,27 +30,26 @@ const App: React.FC = () => {
   };
 
   return (
-    <>
+    <Router>
       <Header />
       <ButtonNav
         currentPage={currentPage}
         handlePageChange={handlePageChange}
       />
-      <Body currentPage={currentPage} handlePageChange={handlePageChange} />
-    </>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Body
+              currentPage={currentPage}
+              handlePageChange={handlePageChange}
+            />
+          }
+        />
+        <Route path="/msft" element={<MicrosoftComponent />} />
+      </Routes>
+    </Router>
   );
 };
 
 export default App;
-
-// Current bio
-// Primary logos timeline
-/*
- columbia
- cs.trade
- cs
- nyu
- playbook
-*/
-
-// links to [projects][education][]
